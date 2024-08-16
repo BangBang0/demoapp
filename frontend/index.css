@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Updated colors for a healthcare theme */
+    --background: 190 30% 95%; /* Light blue */
+    --foreground: 210 16% 20%; /* Darker grey for text */
+
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 210 16% 20%; /* Darker grey for text */
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 210 16% 20%;
+
+    --primary: 210 10% 40%; /* Muted blue for primary elements */
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 190 20% 88%; /* Soft blue-grey */
+    --secondary-foreground: 210 16% 20%;
+    --secondary-text: 210 16% 35%; /* Darker blue-grey for secondary text */
+
+    --muted: 190 15% 90%; /* Very light blue-grey */
+    --muted-foreground: 210 16% 35%;
+
+    --accent: 210 10% 40%; /* Blue for accents */
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 210 20% 90%; /* Light blue-grey for borders */
+    --input: 210 20% 90%; /* Light blue-grey for input backgrounds */
+    --ring: 210 16% 20%; /* Darker blue-grey for focus rings */
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 210 16% 20%; /* Darker blue-grey */
+    --foreground: 0 0% 98%;
+
+    --card: 210 16% 25%; /* Slightly lighter dark blue-grey */
+    --card-foreground: 0 0% 98%;
+
+    --popover: 210 16% 25%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 190 30% 70%; /* Bright blue for primary in dark mode */
+    --primary-foreground: 210 16% 20%;
+
+    --secondary: 210 16% 35%; /* Darker muted blue-grey */
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 210 16% 30%; /* Dark muted blue-grey */
+    --muted-foreground: 190 30% 70%;
+
+    --accent: 210 16% 30%; /* Dark blue-grey for accents */
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 210 16% 30%;
+    --input: 210 16% 30%;
+    --ring: 210 16% 80%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
